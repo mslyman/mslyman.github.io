@@ -5,12 +5,22 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" />        
         <title>Iframe</title>
         <style>
+            .fp-container{
+                width: 100%; 
+                padding-top: 150%; 
+                position: relative;
+            }
+            @media (min-width: 600px) {
+                .fp-container{
+                    padding-top: 50%;
+                }
+            }
         </style> 
     </head>
     <body>
         <h3>Customer's site</h3>
         <h4>Iframe</h3>
-        <div style="width:100%;padding-top:50%;position:relative;">
+        <div class="fp-container">
         <iframe style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%" 
             src="https://testsmevent10.expofp.com"/>
         </div>
